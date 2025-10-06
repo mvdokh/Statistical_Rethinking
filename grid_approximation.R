@@ -8,7 +8,7 @@ p_grid <- seq(from = 0, to = 1, length.out = 50)
 #prior <- exp( -5*abs( p_grid - 0.5 ) )
 
 # Prior = 0 for values < 0.5 and 1 for values >= 0.5
-prior <- ifelse( p_grid < 0.55 , 0 , 1 )
+prior <- ifelse( p_grid < 0.50 , 0 , 1 )
 
 
 # compute likelihood at each value in grid
